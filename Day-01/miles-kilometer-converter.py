@@ -11,6 +11,7 @@ To add:
 import os
 import time
 
+                    # for decoration and other purpose
 
 # for screen clearance : Output clearance
 def clear_screen():
@@ -23,6 +24,8 @@ def clear_screen():
         _ = os.system('clear')
 
 
+
+#for three dots in loading... and proceeding... etc. 
 def threeDots(word: str):
     """
     word => which word to be displayed besides the ... here.
@@ -40,6 +43,9 @@ def threeDots(word: str):
 def confirmation():
     input("\nPress Enter to continue...") 
 
+
+
+                        # Main logic of the program.
 
 MILE_TO_KILOMETERS:float = 1.609  # Km
 def main()->int:
@@ -61,8 +67,6 @@ def main()->int:
         print("\n- - - - - - - - - - - - - - - - - - - - - - - - - - - -") 
         threeDots("Proceeding")
         
-
-
 
         # for matching choice cases
         match userInput:
@@ -106,9 +110,6 @@ def main()->int:
         clear_screen()
 
     return 0
-
-
-
 
 
 
